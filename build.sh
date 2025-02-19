@@ -19,6 +19,10 @@ dnf install -y tmux
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-#### Example for enabling a System Unit File
+dnf5 -y copr enable solopasha/hyprland
+dnf5 -y install xdg-desktop-portal-hyprland hyprland cliphist eww-git hypridle hyprlock hyprshot waypaper
+dnf5 -y copr disable solopasha/hyprland
+
+### Example for enabling a System Unit File
 
 systemctl enable podman.socket
